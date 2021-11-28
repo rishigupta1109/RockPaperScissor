@@ -1,0 +1,81 @@
+body{
+    margin:0;
+    background-color: rgb(111,90,205);
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.homepage,.gamepage{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+#logo{
+    height:400px;
+}
+.logo{
+    text-align: center;
+    width: 800px;
+    background-color:#8C52FF ;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+Button{
+    margin: 10px 0;
+    padding: 15px;
+    width:135px;
+    background-color: #3F329E;
+    color: white;
+    font-size: larger;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.gamepage,.navbar{
+    display: none;
+}
+.scoresection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+.row{
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.row div{
+    margin: 10px 25px;
+}
+.navbar{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: #3F329E;
+}
+video{
+    height: 200px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    cursor: pointer;
+}
+
+.options{
+    flex-wrap: wrap;
+}

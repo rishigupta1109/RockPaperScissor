@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    
+</head>
+<body>
+    <div class="homepage">
+        <div class="logo">
+            <img src="./images/logo.gif" id="logo" alt="logo">
+        </div>
+        <h1>Rock Paper Scissor</h1>
+            <button onClick="createroom()">create room</button>
+            <button onClick="joinroom()">join room</button>
+    </div>
+    <div class="navbar"><h1>Rock Paper Scissor</h1></div>
+    <div class="gamepage">
+        <div class="scoresection">
+            <div class="row">RoomID: <p id="room-id"></p> </div>
+            <h1>Score</h1>
+            <div class="row">
+                <div class="row"><p id="p1name"></p> : <p id="p1pts"></p></div>
+                <div class="row"><p id="p2name"></p> : <p id="p2pts"></p></div>
+            </div>
+        </div>
+        <div class="options row">
+            <div class="optionwrapper">
+                <video muted id="rock"  src="./images/rock.mp4"></video>
+            </div>
+            <div class="optionwrapper">
+                <video muted id="paper"  src="./images/paper.mp4"></video>
+            </div>
+            <div class="optionwrapper">
+                <video muted id="scissor" src="./images/scissor.mp4"></video>
+            </div>
+        </div>
+        <div class="status">
+            <h2>Wait for your turn</h2>
+        </div>
+    </div>
+    <script src="app.js"></script>
+ 
+</body>
+</html>
