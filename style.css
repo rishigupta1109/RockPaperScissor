@@ -78,4 +78,16 @@ video{
 
 .options{
     flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width:950px) {
+    #logo,.logo{
+        width:400px;
+    }
+}
+@media (max-width:500px) {
+    #logo,.logo{
+        width:200px;
+        height: 200px;
+    }
 }
