@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="http://localhost:3000/socket.io/socket.io.js"></script> -->
     <script src="https://enigmatic-everglades-57456.herokuapp.com/socket.io/socket.io.js"></script>
     
 </head>
@@ -24,8 +25,8 @@
             <div class="row">RoomID: <p id="room-id"></p> </div>
             <h1>Score</h1>
             <div class="row">
-                <div class="row"><p id="p1name"></p> : <p id="p1pts"></p></div>
-                <div class="row"><p id="p2name"></p> : <p id="p2pts"></p></div>
+                <div class="row"><p id="p1name"></p>  <p id="p1pts"></p></div>
+                <div class="row"><p id="p2name"></p>  <p id="p2pts"></p></div>
             </div>
         </div>
         <div class="options row">
@@ -42,6 +43,20 @@
         <div class="status">
             <h2>Wait for your turn</h2>
         </div>
+        <div class="chatroom">
+            <div class="chats">
+             
+            </div>
+            <div class="input">
+                <input type="text" id="message">
+                <button id="send">send</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <img src="./images/won.png" alt="image" id="image">
+        <div class="winner">You won</div>
+        <button id="modalbtn">ok</button>
     </div>
     <script src="app.js"></script>
  

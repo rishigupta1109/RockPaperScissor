@@ -13,6 +13,30 @@ body{
     color: white;
     
 }
+.modal{
+    border: 2px solid white;
+    top: 100px;
+    position: absolute;
+    background: blueviolet;
+    color: white;
+    left: 402px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    border-radius: 15px;
+    display: none;
+}
+#image{
+    height:250px;
+    margin:20px 0;
+}
+.winner{
+    font-size: xxx-large;
+    font-weight: 900;
+}
 #logo{
     height:400px;
 }
@@ -43,6 +67,38 @@ Button{
 }
 .gamepage,.navbar{
     display: none;
+}
+.chatroom{
+    background: #976a8e5e;
+padding: 10px;
+border-radius: 10px;
+margin: 50px;
+}
+.chats{
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 300px;
+width:400px;
+}
+.message{
+    
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+}
+.L{
+    background: rgb(111,90,205);
+}
+.R{
+    background-color: cornflowerblue;
 }
 .scoresection{
     display: flex;
@@ -84,10 +140,30 @@ video{
     #logo,.logo{
         width:400px;
     }
+    .modal{
+        top:10px;
+        left:50px;
+    }
 }
-@media (max-width:500px) {
+@media (max-width:600px) {
     #logo,.logo{
         width:200px;
         height: 200px;
     }
+    .chats{
+        width:300px;
+    }
+    .modal{
+        top:10px;
+        left:10px;
+        width:300px;
+    }
+}
+#message{
+    margin: 10px;
+    padding: 9px;
+    border-radius: 13px;
+    outline: none;
+    border: none;
+    font-size: larger;
 }
