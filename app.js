@@ -215,6 +215,7 @@ const appendMsg = (msg, sender) => {
 };
 send.onclick = () => {
   let msg = message.value;
+  if (msg.trim().length === 0) return;
   appendMsg(msg, 1);
   message.value = "";
   socket.emit("send-message", { msg, roomid });
